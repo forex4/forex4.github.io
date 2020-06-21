@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DID HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Формы</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+	<form action="formdata.php" method="POST" name="form1">
+		<fieldset>
+		<legend><h3>Ввод личных данных</h3></legend>
+		<p><label>Введите ваше имя (макс. 10 символов): <br><input type="text" name="name" size="30" maxlength="10"></label></p>
+		<p><label>Введите ваш пароль (макс. 10 символов): <br><input type="password" name="name" size="30" maxlength="10"></label></p>
+		</fieldset>
+		<fieldset>
+		<legend><h3>Вопросы</h3></legend>
+		<p>Любите ли Вы экономить время</p>
+		<p><label>Да<input type="radio" name="time" value="yes" checked></label> <label>Нет<input type="radio" name="time" value="no"></label></p>
+
+		<p>Какими инструментами для экономии времени Вы пользуетесь?</p>
+		<p>
+
+			<label><input type="checkbox" name="ez">Ежедневник</label>
+			<label><input type="checkbox" name="xr">Хронометраж</label>
+			<label><input type="checkbox" name="sv">Свои наработки</label>
+
+		</p>
+		<p><label for="sleep">Сколько часов в день вы спите?</label></p>
+		<p>
+			<select name="sleep">
+				<option>5</option>
+				<option>6</option>
+				<option>7</option>
+				<option selected>8</option>
+				<option>Больше 8 часов</option>
+			</select>
+		</p>
+		</fieldset>
+		<fieldset>
+		<legend><h3>Поделись!</h3></legend>
+		<p><label for="text">Поделитесь своими нароботками в экономии времени:</label></p>
+
+		<p><textarea name="text" id="sleep" cols="50" rows="6">Тестовой текст...</textarea></p>
+		<p><input type="reset" name="reset" value="Сброс"><input type="submit" name="submit" value="Отправить"></p>
+		<p><input type="image" src="img.png" name="imageButton"></p>
+		</fieldset>
+
+
+	</form>
+</body>
+</html>
