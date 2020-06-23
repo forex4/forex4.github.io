@@ -23,6 +23,11 @@ header {
 	border-bottom-color: #700;
 }
 
+#hello {
+	color: white;
+	background-color: rgba(200, 35, 100, 0.753);
+}
+
 p {
 	background-color:;
 }
